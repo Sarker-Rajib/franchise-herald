@@ -1,0 +1,73 @@
+@use '../abstracts/variables';
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.category-heading {
+  color: #b31a1b;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.category-heading-big {
+  color: #b31a1b;
+  font-weight: 900;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 15px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.heading-small {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.heading-midium {
+  font-family: 'Calistoga', cursive;
+  color: #000000;
+  font-size: 23px;
+}
+
+.heading-large {
+  font-family: 'Calistoga', cursive;
+  color: #000000;
+  font-size: 28px;
+}
+
+.heading-large-v2 {
+  font-family: 'Calistoga', cursive;
+  color: #000000;
+  font-size: 33px;
+}
+
+.heading-xl {
+  font-family: 'Calistoga', cursive;
+  color: #000000;
+  font-size: 38px;
+}
+
+.paragraph-t1 {
+  font-family: "helvetica";
+  font-size: 16px;
+}
+
+.para-t2 {
+  font-family: "helvetica";
+  font-size: 14px;
+}
+
+.para-small {
+  font-family: "helvetica";
+  font-size: 12px;
+}
+
+hr {
+  color: #646464;
+}

@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@300;500;600;700;900&display=swap");
 @font-face {
   font-family: "helvetica-regular";
-  src: url(../fonts/HelveticaNeueMed.ttf);
+  src: url(../fonts/Helvetica.ttf);
+  font-weight: normal;
 }
 @font-face {
   font-family: "helvetica-bold";
@@ -107,18 +108,35 @@ body {
   font-size: 38px;
 }
 
+.writter {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.para-heading {
+  font-family: "helvetica-bold";
+  font-size: 22px;
+}
+
+.para-big {
+  font-family: "helvetica-regular";
+  font-size: 20px;
+}
+
 .paragraph-t1 {
-  font-family: "helvetica";
+  font-family: "helvetica-regular";
   font-size: 16px;
 }
 
 .para-t2 {
-  font-family: "helvetica";
+  font-family: "helvetica-regular";
   font-size: 14px;
 }
 
 .para-small {
-  font-family: "helvetica";
+  font-family: "helvetica-regular";
   font-size: 12px;
 }
 

@@ -90,6 +90,12 @@ body {
   font-size: 23px;
 }
 
+.heading-midium-v2 {
+  font-family: "Calistoga", cursive;
+  color: #000000;
+  font-size: 25px;
+}
+
 .heading-large {
   font-family: "Calistoga", cursive;
   color: #000000;
@@ -113,31 +119,37 @@ body {
   font-weight: 600;
   font-size: 16px;
   padding-bottom: 10px;
+  color: #333333;
 }
 
 .para-heading {
   font-family: "helvetica-bold";
   font-size: 22px;
+  color: #333333;
 }
 
 .para-big {
   font-family: "helvetica-regular";
   font-size: 20px;
+  color: #333333;
 }
 
 .paragraph-t1 {
   font-family: "helvetica-regular";
   font-size: 16px;
+  color: #333333;
 }
 
 .para-t2 {
   font-family: "helvetica-regular";
   font-size: 14px;
+  color: #333333;
 }
 
 .para-small {
   font-family: "helvetica-regular";
   font-size: 12px;
+  color: #333333;
 }
 
 .number {
@@ -183,6 +195,47 @@ hr {
 }
 
 /*===// end of components css === */
+.pagin-wrapper {
+  padding: 20px 0;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .pagin-wrapper {
+    max-width: 80%;
+  }
+}
+.pagin-wrapper .nav-btn {
+  border: none;
+  background: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+}
+.pagin-wrapper .page-nums {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+@media (min-width: 1200px) {
+  .pagin-wrapper .page-nums {
+    padding: 0 50px;
+  }
+}
+.pagin-wrapper .page-nums .page-num {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+}
+.pagin-wrapper .page-nums .page-num.active {
+  color: #b31a1b;
+}
+.pagin-wrapper .page-nums .page-num:hover {
+  color: #b31a1b;
+}
+
 /*=== layout css start === */
 .top-navigation {
   border-bottom: 4px solid #b90000;

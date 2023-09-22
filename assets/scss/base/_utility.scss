@@ -3,3 +3,10 @@
         border-right: 2px solid #eee;
     }
 }
+
+.bor-l {
+    @media (min-width:1200px) {
+        padding-left: 20px;
+        border-left: 2px solid #eee;
+    }
+}

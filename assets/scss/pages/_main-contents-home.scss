@@ -41,3 +41,50 @@
         }
     }
 }
+
+.top-franchises {
+    table {
+        th {
+            font-family: 'Inter', sans-serif;
+            color: #000000;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        td {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: #333333;
+            font-size: 14px;
+        }
+    }
+
+    .line {
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background: #666666;
+        vertical-align: middle;
+    }
+
+    .down {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        vertical-align: middle;
+        border-top: 10px solid #b33027;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+    }
+
+
+    .up {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        vertical-align: middle;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 10px solid #6096d9;
+    }
+}

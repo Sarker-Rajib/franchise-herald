@@ -49,6 +49,11 @@ a:hover {
   text-decoration: none;
 }
 
+@media (min-width: 1350px) {
+  .container {
+    max-width: 1300px;
+  }
+}
 @media (min-width: 1600px) {
   .container {
     max-width: 1510px;
@@ -171,6 +176,13 @@ hr {
   }
 }
 
+@media (min-width: 1200px) {
+  .bor-l {
+    padding-left: 20px;
+    border-left: 2px solid #eee;
+  }
+}
+
 /*===// end of base css === */
 /*=== components css start === */
 .editors-pick .swiper-button-next {
@@ -234,6 +246,44 @@ hr {
 }
 .pagin-wrapper .page-nums .page-num:hover {
   color: #b31a1b;
+}
+
+.top-franchises table th {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+}
+.top-franchises table td {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #333333;
+  font-size: 14px;
+}
+.top-franchises .line {
+  display: inline-block;
+  height: 2px;
+  width: 12px;
+  background: #666666;
+  vertical-align: middle;
+}
+.top-franchises .down {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 10px solid #b33027;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.top-franchises .up {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid #6096d9;
 }
 
 /*=== layout css start === */
@@ -311,11 +361,6 @@ hr {
 .footer .footer-top .link-wrap {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-}
-@media (max-width: 767px) {
-  .footer .footer-top .link-wrap {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media (max-width: 1199px) {
   .footer .footer-top .link-wrap {

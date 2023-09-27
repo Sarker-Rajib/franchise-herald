@@ -1,27 +1,31 @@
 .top-navigation {
-    border-bottom: 4px solid #b90000;
+    border-bottom: 2px solid #b90000;
     padding: 20px 0;
 
     .middle-sec {
         .navbar-brand {
             display: inline-block;
-            max-width: 600px;
+            max-width: 500px;
+
+            @media(max-width:991px) {
+                max-width: 80%;
+            }
         }
 
         .address {
             font-family: 'Inter', sans-serif;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 12px;
             color: #777777;
 
             @media(max-width:767px) {
-                font-size: 10px;
+                display: none;
             }
         }
     }
 
     .subscribe-btn {
-        font-size: 16px;
+        font-size: 14px;
         font-family: 'Inter', sans-serif;
         font-weight: 700;
         color: #ffffff;
@@ -30,7 +34,7 @@
         border-radius: 20px;
         padding: 5px 10px;
 
-        @media(max-width:767px) {
+        @media(max-width:991px) {
             font-size: 10px;
         }
     }
@@ -38,15 +42,25 @@
 
 .bottom-navigation {
     padding: 15px 0;
+    border-bottom: 1px solid #cccccc;
 
     @media(max-width:991px) {
         overflow-x: scroll;
+
+        // scroll bar design
+        /* width */
+        &::-webkit-scrollbar {
+            height: 10px;
+            width: 10px;
+        }
+
+        padding: 10px 0 0px 0;
     }
 
 
     .link-wrapper {
         @media(max-width:991px) {
-            width: 900px;
+            width: 740px;
         }
     }
 
@@ -55,6 +69,7 @@
         margin: 0 30px;
         font-family: 'Inter', sans-serif;
         font-weight: 500;
+        font-size: 14px;
 
         &:hover {
             color: #b90000;

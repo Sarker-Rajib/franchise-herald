@@ -1,12 +1,50 @@
 .bor-right {
     @media (min-width:1200px) {
-        border-right: 2px solid #eee;
+        border-right: 1px solid #f1f1f1;
     }
 }
 
 .bor-l {
     @media (min-width:1200px) {
         padding-left: 20px;
-        border-left: 2px solid #eee;
+        border-left: 1px solid #f1f1f1;
+    }
+}
+
+.text-xxl-preline {
+    @media (min-width: 1400px) {
+        white-space: pre-line;
+    }
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+.line-clamp-4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+}
+
+
+.table {
+    @media (max-width: 1400px) {
+
+        th,
+        td {
+            padding-left: .25rem;
+            padding-right: .25rem;
+        }
+    }
+}
+
+.custom-gutter {
+    @media(min-width: 1200px) {
+        --bs-gutter-x: 32px
     }
 }

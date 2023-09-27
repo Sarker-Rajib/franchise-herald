@@ -35,13 +35,3 @@ a,
 a:hover {
   text-decoration: none;
 }
-
-.container {
-  @media (min-width:1350px) {
-    max-width: 1300px;
-  }
-
-  @media (min-width:1600px) {
-    max-width: 1510px;
-  }
-}

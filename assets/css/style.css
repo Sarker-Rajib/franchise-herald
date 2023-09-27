@@ -49,17 +49,6 @@ a:hover {
   text-decoration: none;
 }
 
-@media (min-width: 1350px) {
-  .container {
-    max-width: 1300px;
-  }
-}
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1510px;
-  }
-}
-
 body {
   font-family: "Inter", sans-serif;
 }
@@ -70,7 +59,7 @@ body {
   font-family: "Inter", sans-serif;
   display: inline-block;
   padding-bottom: 8px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .category-heading-big {
@@ -92,31 +81,76 @@ body {
 .heading-midium {
   font-family: "Calistoga", cursive;
   color: #000000;
-  font-size: 23px;
+  font-size: 20px;
+}
+@media (max-width: 1399px) {
+  .heading-midium {
+    font-size: 18px;
+  }
 }
 
 .heading-midium-v2 {
   font-family: "Calistoga", cursive;
   color: #000000;
-  font-size: 25px;
+  font-size: 20px;
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .heading-midium-v2 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1400px) {
+  .heading-midium-v2 {
+    font-size: 25px;
+  }
 }
 
 .heading-large {
   font-family: "Calistoga", cursive;
   color: #000000;
-  font-size: 28px;
+  font-size: 26px;
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .heading-large {
+    font-size: 23px;
+  }
+}
+@media (max-width: 991px) {
+  .heading-large {
+    font-size: 20px;
+  }
 }
 
 .heading-large-v2 {
   font-family: "Calistoga", cursive;
   color: #000000;
-  font-size: 33px;
+  font-size: 30px;
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .heading-large-v2 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 991px) {
+  .heading-large-v2 {
+    font-size: 26px;
+  }
 }
 
 .heading-xl {
   font-family: "Calistoga", cursive;
   color: #000000;
   font-size: 38px;
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .heading-xl {
+    font-size: 35px;
+  }
+}
+@media (max-width: 991px) {
+  .heading-xl {
+    font-size: 30px;
+  }
 }
 
 .writter {
@@ -141,7 +175,7 @@ body {
 
 .paragraph-t1 {
   font-family: "helvetica-regular";
-  font-size: 16px;
+  font-size: 15px;
   color: #333333;
 }
 
@@ -160,10 +194,10 @@ body {
 .number {
   font-family: "Calistoga", cursive;
   color: #b31a1b;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 900;
   margin-right: 20px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 hr {
@@ -172,14 +206,48 @@ hr {
 
 @media (min-width: 1200px) {
   .bor-right {
-    border-right: 2px solid #eee;
+    border-right: 1px solid #f1f1f1;
   }
 }
 
 @media (min-width: 1200px) {
   .bor-l {
     padding-left: 20px;
-    border-left: 2px solid #eee;
+    border-left: 1px solid #f1f1f1;
+  }
+}
+
+@media (min-width: 1400px) {
+  .text-xxl-preline {
+    white-space: pre-line;
+  }
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+}
+
+@media (max-width: 1400px) {
+  .table th,
+  .table td {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-gutter {
+    --bs-gutter-x: 32px ;
   }
 }
 
@@ -252,13 +320,13 @@ hr {
   font-family: "Inter", sans-serif;
   color: #000000;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 .top-franchises table td {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #333333;
-  font-size: 14px;
+  font-size: 12px;
 }
 .top-franchises .line {
   display: inline-block;
@@ -288,26 +356,31 @@ hr {
 
 /*=== layout css start === */
 .top-navigation {
-  border-bottom: 4px solid #b90000;
+  border-bottom: 2px solid #b90000;
   padding: 20px 0;
 }
 .top-navigation .middle-sec .navbar-brand {
   display: inline-block;
-  max-width: 600px;
+  max-width: 500px;
+}
+@media (max-width: 991px) {
+  .top-navigation .middle-sec .navbar-brand {
+    max-width: 80%;
+  }
 }
 .top-navigation .middle-sec .address {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   color: #777777;
 }
 @media (max-width: 767px) {
   .top-navigation .middle-sec .address {
-    font-size: 10px;
+    display: none;
   }
 }
 .top-navigation .subscribe-btn {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: #ffffff;
@@ -316,7 +389,7 @@ hr {
   border-radius: 20px;
   padding: 5px 10px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .top-navigation .subscribe-btn {
     font-size: 10px;
   }
@@ -324,15 +397,22 @@ hr {
 
 .bottom-navigation {
   padding: 15px 0;
+  border-bottom: 1px solid #cccccc;
 }
 @media (max-width: 991px) {
   .bottom-navigation {
     overflow-x: scroll;
+    /* width */
+    padding: 10px 0 0px 0;
+  }
+  .bottom-navigation::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
   }
 }
 @media (max-width: 991px) {
   .bottom-navigation .link-wrapper {
-    width: 900px;
+    width: 740px;
   }
 }
 .bottom-navigation .nav-link {
@@ -340,6 +420,7 @@ hr {
   margin: 0 30px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
+  font-size: 14px;
 }
 .bottom-navigation .nav-link:hover {
   color: #b90000;
@@ -348,6 +429,31 @@ hr {
   .bottom-navigation .nav-link {
     margin: 0 20px;
   }
+}
+
+.side-nav .navbar-brand {
+  max-width: 200px;
+}
+.side-nav .main-nav .nav-link {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  padding: 0.5rem 0px;
+  font-weight: 600;
+}
+@media (max-width: 1399px) {
+  .side-nav .main-nav .nav-link {
+    font-size: 14px;
+  }
+}
+.side-nav .main-nav .nav-link.active, .side-nav .main-nav .nav-link:hover {
+  color: #b90000;
+}
+.side-nav .copyright {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
 }
 
 .footer {
@@ -364,11 +470,11 @@ hr {
 }
 @media (max-width: 1199px) {
   .footer .footer-top .link-wrap {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .footer .footer-top .f-logo {
-  max-width: 300px;
+  max-width: 250px;
   margin-bottom: 30px;
 }
 .footer .footer-top .title-f {
@@ -381,6 +487,7 @@ hr {
 .footer .footer-top a {
   font-family: "helvetica-bold";
   display: inline-block;
+  font-size: 13px;
   transition: all 0.2s;
   margin-bottom: 10px;
   color: #555555;
@@ -397,7 +504,8 @@ hr {
 }
 .footer .foot-bottom p {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
+  color: #878787;
 }
 
 /*===// end of layout css === */

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FRANCHISE HERALD</title>
-  <link rel='shortcut icon' href='assets/images/fav.png' type='image/x-icon'>
+  <link rel='shortcut icon' href='assets/images/fav.svg' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
@@ -21,15 +21,18 @@
         <div class="container justify-content-between">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#" class="nav-link"><i class="fas fa-bars"></i></a>
+              <a href="#sideNav" class="nav-link" data-bs-toggle="offcanvas" role="button"><i
+                  class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"><i class="far fa-search"></i></a>
+              <button data-bs-toggle="modal" data-bs-target="#searchModel" class="nav-link">
+                <i class="far fa-search"></i>
+              </button>
             </li>
           </ul>
           <div class="middle-sec text-center">
             <a class="navbar-brand mx-2 mx-md-0" href="index.html">
-              <img src="assets/images/logo.png" alt="logo" class="img-fluid" />
+              <img src="assets/images/logo.svg" alt="logo" class="img-fluid" />
             </a>
             <p class="address">Monday September 11, 2023 <br class="d-md-none"> <span
                 class="d-none d-md-inline-block">|</span> Last Update:
@@ -40,7 +43,7 @@
         </div>
       </nav>
     </div>
-    <div class="bottom-navigation shadow-sm">
+    <div class="bottom-navigation">
       <div class="container">
         <nav class="d-flex link-wrapper align-items-center justify-content-lg-center">
           <a href="#" class="nav-link ms-0">Franchise News</a>
@@ -53,15 +56,79 @@
         </nav>
       </div>
     </div>
+    <!-- === sideNav start === -->
+    <div class="offcanvas offcanvas-start side-nav" tabindex="-1" id="sideNav">
+      <div class="offcanvas-header p-4">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.svg" alt="logo" class="img-fluid" />
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-4 pt-0">
+        <nav class="main-nav">
+          <ul class="ps-0">
+            <li>
+              <a href="#" class="nav-link">Franchise News</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Featured Franchise</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Biz/Tech</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Guide</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Marketing</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Review</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"> Life</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="offcanvas-footer border-top p-4">
+        <p class="copyright">Copyright © 2023 Franchise HERALD. All rights reserved.</p>
+      </div>
+    </div>
+    <!-- ===//end of sideNav ===-->
+
+    <!-- === searchModel start === -->
+    <div class="modal fade search-modal" id="searchModel" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header px-4">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Search Here
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <form action="#" class="d-flex">
+              <input type="text" class="form-control form-control-lg" placeholder="enter your search text" />
+              <button type="submit" class="btn btn-lg btn-dark search-btn ms-2">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===//end of searchModel === -->
   </header>
   <!-- ===//end of header section === -->
 
   <!-- === banner section start === -->
-  <section class="main-contents-home py-5">
+  <section class="main-contents-home py-4 py-xl-5">
     <div class="container">
-      <div class="row gx-xl-5">
+      <div class="row custom-gutter">
         <div class="col-lg-9 bor-right">
-          <div class="row gx-xl-5 gy-4">
+          <div class="row custom-gutter gy-4">
             <div class="col-xl-4 order-2 order-xl-1 bor-right">
               <div class="news-link">
                 <a href="#">
@@ -113,8 +180,9 @@
               <div class="text-center">
                 <img src="assets/images/chik1.png" alt="image" class="img-fluid mb-3">
                 <span class="category-heading">Marketing</span>
-                <h1 class="heading-xl pb-3">Fried-Chicken-Sandwich Mania Forces Popeyes to Redo Its <br
-                    class="d-none d-xxl-inline-block"> Kitchens</h1>
+                <h1 class="heading-xl text-xxl-preline pb-3">Fried-Chicken-Sandwich Mania
+                  Forces Popeyes to Redo Its
+                  Kitchens</h1>
                 <p class="paragraph-t1">The American dream is attainable to everyone and CEO Rudy L. Kusuma proves that
                   to each real estate agent he works with. The American dream is attainable to everyone and CEO Rudy L.
                   Kusuma proves that to each real estate agent.</p>
@@ -148,7 +216,7 @@
           </div>
 
           <!-- NEWS-P-2 -->
-          <div class="row gy-4 gx-xl-5">
+          <div class="row gy-4 custom-gutter">
             <div class="col-md-4 order-2 order-lg-1 bor-right">
               <div class="row">
                 <div class="col-6 col-md-12">
@@ -167,7 +235,7 @@
                     <a href="#">
                       <img src="assets/images/l2.png" alt="image" class="img-fluid mb-2">
                       <span class="category-heading">Marketing</span>
-                      <h2 class="heading-midium">
+                      <h2 class="heading-midium line-clamp-3">
                         How to Create a Landing Page That Converts?
                       </h2>
                     </a>
@@ -176,11 +244,13 @@
               </div>
             </div>
 
-            <div class="col-md-8 order-1 order-lg-2">
+            <div class=" col-md-8 order-1 order-lg-2">
               <div class="text-center">
                 <img src="assets/images/l1.png" alt="image" class="img-fluid mb-3">
                 <span class="category-heading">Marketing</span>
-                <h1 class="heading-xl pb-3">Fried-Chicken-Sandwich Mania Forces Popeyes to Redo Its Kitchens</h1>
+                <h1 class="heading-large-v2 pb-3 ">Fried-Chicken-Sandwich Mania
+                  Forces Popeyes to Redo Its
+                  Kitchens</h1>
                 <p class="paragraph-t1">The American dream is attainable to everyone and CEO Rudy L. Kusuma proves that
                   to each real estate agent he works with. The American dream is attainable to everyone and CEO Rudy L.
                   Kusuma proves that to each real estate agent.</p>
@@ -188,7 +258,7 @@
             </div>
           </div>
 
-          <hr class="my-5" style="color: #000;">
+          <hr class="my-4 mt-xl-5" style="color: #000;">
 
           <!-- Editor’s Pick -->
           <div class="editors-pick">
@@ -238,24 +308,23 @@
             </div>
           </div>
 
-          <hr class="my-5" style="color: #000;">
+          <hr class="my-4 mt-xl-5" style="color: #000;">
 
           <!-- Featured Franchise -->
           <div>
             <p class="category-heading-big">Featured Franchise</p>
-            <div class="row gx-xl-5">
+            <div class="row custom-gutter">
               <div class="col-lg-7 bor-right">
                 <img src="assets/images/ll1.png" alt="image" class="img-fluid mb-3">
 
                 <div class="news-link">
                   <span class="category-heading">Marketing</span>
                   <a href="#">
-                    <h1 class="heading-large-v2 pb-3">
-                      Fried-Chicken-Sandwich Mania Forces Popeyes to Redo Its Kitchens
+                    <h1 class="heading-large-v2 pb-3"> Fried-Chicken-Sandwich Mania Forces Popeyes to Redo Its itchens
                     </h1>
                   </a>
                 </div>
-
+                <hr>
                 <div class="news-link">
                   <span class="category-heading">Marketing</span>
                   <a href="#">
@@ -299,12 +368,12 @@
             </div>
           </div>
 
-          <hr class="my-5">
+          <hr class="my-4 mt-xl-5">
 
           <!-- Biz/Tech -->
           <div>
             <p class="category-heading-big">Biz/Tech</p>
-            <div class="row gx-xl-5">
+            <div class="row custom-gutter">
               <div class="col-lg-6 bor-right">
 
                 <div class="news-link pb-3 pb-xl-5">
@@ -420,12 +489,12 @@
             </div>
           </div>
 
-          <hr class="my-5">
+          <hr class="my-4 mt-xl-5">
 
           <!-- Guide -->
           <div>
             <p class="category-heading-big">Guide</p>
-            <div class="row gx-xl-5">
+            <div class="row custom-gutter">
               <div class="col-lg-6 bor-right">
                 <div class="news-link pb-3 pb-xl-5">
                   <img src="assets/images/im3.png" alt="image" class="img-fluid mb-3">
@@ -454,7 +523,7 @@
                     <div class="col-6">
                       <a href="#">
                         <span class="category-heading">Marketing</span>
-                        <h2 class="heading-midium">
+                        <h2 class="heading-midium line-clamp-4">
                           Essential Employee Roles To Increase The Operational Success Of Your Business
                         </h2>
                       </a>
@@ -540,12 +609,12 @@
             </div>
           </div>
 
-          <hr class="my-5">
+          <hr class="my-4 mt-xl-5">
 
           <!-- Marketing -->
           <div>
             <p class="category-heading-big">Marketing</p>
-            <div class="row gx-xl-5">
+            <div class="row custom-gutter">
               <div class="col-lg-6 bor-right">
                 <div class="news-link pb-3 pb-xl-5">
                   <img src="assets/images/m1.png" alt="image" class="img-fluid mb-3">
@@ -660,7 +729,7 @@
             </div>
           </div>
 
-          <hr class="my-5">
+          <hr class="my-4 mt-xl-5">
           <!-- left side ended -->
         </div>
 
@@ -732,11 +801,13 @@
           <!--  -->
 
           <!-- advertisement -->
-          <div class="advert text-center pt-0 pt-xl-5">
+          <div class="advert text-center pt-3 pt-xl-5 mx-auto" style="max-width: 300px;">
             <div class="py-0 py-xl-5"></div>
-            <span class="py-2 d-inline-block" style="color: #7e7e7e;">Advertisement</span>
+            <span class="d-inline-block"
+              style="color: #7e7e7e; font-size: 10px; padding-bottom: 5px;">Advertisement</span>
             <img src="assets/images/add1.png" alt="add-sam" class="img-fluid">
           </div>
+
           <!--  -->
           <hr class="my-5">
 
@@ -800,78 +871,82 @@
           <!--  -->
 
           <!-- advertisement -->
-          <div class="advert text-center pt-0 pt-xl-5">
-            <span class="py-2 d-inline-block" style="color: #7e7e7e;">Advertisement</span>
+          <div class="advert text-center pt-3 pt-xl-5 mx-auto" style="max-width: 300px;">
+            <span class="d-inline-block"
+              style="color: #7e7e7e; font-size: 10px; padding-bottom: 5px;">Advertisement</span>
             <img src="assets/images/add1.png" alt="add-sam" class="img-fluid">
           </div>
+
           <!--  -->
-          <hr class="my-5">
+          <hr class="my-4 mt-5">
 
           <!-- Top 10 Franchises of 2023 -->
           <div class="top-franchises">
             <h2 class="number pb-3 pb-xl-4" style="  font-family: 'Inter', sans-serif;">Top 10 Franchises of 2023</h2>
 
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col" style="background: #f1f3f3;">RANK</th>
-                  <td scope="col" style="background: #f1f3f3;">FRANCHISE NAME</td>
-                  <td scope="col" style="background: #f1f3f3;">STARUP COSTS</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="text-center num">1 <span class="line"></span></th>
-                  <td>Hampton Hotels</td>
-                  <td class="text-end">$3.7M - 13.52M</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">2 <span class="line"></span></th>
-                  <td>Subway</td>
-                  <td class="text-end">$85k - 120k</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">3 <span class="up"></span></th>
-                  <td>Jiffy Lube</td>
-                  <td class="text-end">$196K - 304K</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">4 <span class="down"></span></th>
-                  <td>7-eleven inc</td>
-                  <td class="text-end">$30K - 90M</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">5 <span class="down"></span></th>
-                  <td>Supercuts</td>
-                  <td class="text-end">$103K - 196K</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">6 <span class="up"></span></th>
-                  <td>Anytime fitness</td>
-                  <td class="text-end">$56K - 303K</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">7 <span class="up"></span></th>
-                  <td>Servpro</td>
-                  <td class="text-end">$133K - 189K</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">8 <span class="up"></span></th>
-                  <td>Denny's Inc</td>
-                  <td class="text-end">$1.1M - 1.8M</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">9 <span class="down"></span></th>
-                  <td>McDonald's</td>
-                  <td class="text-end">$1M - 2.16M</td>
-                </tr>
-                <tr>
-                  <th class="text-center num">10 <span class="up"></span></th>
-                  <td>Pizza Hut Inc</td>
-                  <td class="text-end">$295K - 2.15M</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive-xl">
+              <table class="table text-nowrap">
+                <thead>
+                  <tr>
+                    <th scope="col" style="background: #f1f3f3;">RANK</th>
+                    <td scope="col" style="background: #f1f3f3;">FRANCHISE NAME</td>
+                    <td scope="col" style="background: #f1f3f3;text-align: right;">STARUP COSTS</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="text-center num">1 <span class="line"></span></th>
+                    <td>Hampton Hotels</td>
+                    <td class="text-end">$3.7M - 13.52M</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">2 <span class="line"></span></th>
+                    <td>Subway</td>
+                    <td class="text-end">$85k - 120k</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">3 <span class="up"></span></th>
+                    <td>Jiffy Lube</td>
+                    <td class="text-end">$196K - 304K</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">4 <span class="down"></span></th>
+                    <td>7-eleven inc</td>
+                    <td class="text-end">$30K - 90M</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">5 <span class="down"></span></th>
+                    <td>Supercuts</td>
+                    <td class="text-end">$103K - 196K</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">6 <span class="up"></span></th>
+                    <td>Anytime fitness</td>
+                    <td class="text-end">$56K - 303K</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">7 <span class="up"></span></th>
+                    <td>Servpro</td>
+                    <td class="text-end">$133K - 189K</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">8 <span class="up"></span></th>
+                    <td>Denny's Inc</td>
+                    <td class="text-end">$1.1M - 1.8M</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">9 <span class="down"></span></th>
+                    <td>McDonald's</td>
+                    <td class="text-end">$1M - 2.16M</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center num">10 <span class="up"></span></th>
+                    <td>Pizza Hut Inc</td>
+                    <td class="text-end">$295K - 2.15M</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <hr class="my-5">
 
@@ -943,7 +1018,7 @@
               <div class="row">
                 <div class="col-9">
                   <a href="#">
-                    <h1 class="heading-midium">
+                    <h1 class="heading-midium line-clamp-3">
                       How to Create a Landing Page That Converts?
                     </h1>
                   </a>
@@ -957,21 +1032,22 @@
           <!--  -->
 
           <!-- advertisement -->
-          <div class="advert text-center pt-0 pt-xl-5">
-            <div class="py-0 py-xl-3"></div>
-            <span class="py-2 d-inline-block" style="color: #7e7e7e;">Advertisement</span>
+          <div class="advert text-center pt-3 pt-xl-5 mx-auto" style="max-width: 300px;">
+            <span class="d-inline-block"
+              style="color: #7e7e7e; font-size: 10px; padding-bottom: 5px;">Advertisement</span>
             <img src="assets/images/add1.png" alt="add-sam" class="img-fluid">
           </div>
+
           <!--  -->
         </div>
       </div>
 
-      <div class="row gx-xl-5">
+      <div class="row custom-gutter">
         <div class="col-lg-9 bor-right">
           <!-- Featured Franchise -->
           <div>
             <p class="category-heading-big">Featured Franchise</p>
-            <div class="row gx-xl-5">
+            <div class="row custom-gutter">
               <div class="col-lg-7 bor-right">
                 <img src="assets/images/ff3.png" alt="image" class="img-fluid mb-3">
 
@@ -1030,16 +1106,18 @@
 
         <div class="col-lg-3">
           <!-- advertisement -->
-          <div class="mx-auto text-center" style="max-width: 1140px;">
-            <span class="pb-3 d-inline-block" style="color: #7e7e7e;">Advertisement</span>
+          <div class="advert text-center pt-3 pt-xl-0 mx-auto" style="max-width: 300px;">
+            <span class="d-inline-block"
+              style="color: #7e7e7e; font-size: 10px; padding-bottom: 5px;">Advertisement</span>
             <img src="assets/images/add3.png" alt="add-sam" class="img-fluid">
           </div>
         </div>
       </div>
 
       <!-- advertisement -->
-      <div class="mx-auto my-5 text-center" style="max-width: 1140px;">
-        <span class="py-3 d-inline-block" style="color: #7e7e7e;">Advertisement</span>
+      <div class="mx-auto my-5 text-center" style="max-width: 966px;">
+        <span class="pt-3 d-inline-block"
+          style="color: #7e7e7e; font-size: 10px; padding-bottom: 5px;">Advertisement</span>
         <img src="assets/images/add-sam.png" alt="add-sam" class="img-fluid">
       </div>
     </div>
@@ -1050,7 +1128,7 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
-        <img src="assets/images/footer-logo.png" alt="img" class="f-logo img-fluid">
+        <img src="assets/images/footer-logo.svg" alt="img" class="f-logo img-fluid">
         <div class="link-wrap">
           <div class="news">
             <h4 class="title-f">News</h4>
@@ -1102,7 +1180,7 @@
         </div>
       </div>
     </div>
-    <div class="foot-bottom text-center">
+    <div class="foot-bottom">
       <div class="container">
         <p>Copyright © 2023 Franchise HERALD. All rights reserved. Use of this Web site constitutes acceptance of our
           Terms and Conditions of Use and Privacy Policy.</p>

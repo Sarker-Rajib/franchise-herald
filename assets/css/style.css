@@ -253,22 +253,37 @@ hr {
 
 /*===// end of base css === */
 /*=== components css start === */
-.editors-pick .swiper-button-next {
+@media (min-width: 992px) {
+  .editors-pick-wrap {
+    width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .editors-pick-wrap {
+    width: 780px;
+  }
+}
+@media (min-width: 1400px) {
+  .editors-pick-wrap {
+    width: 950px;
+  }
+}
+.editors-pick-wrap .swiper-button-next {
   top: 10px;
   right: 0;
   width: 20px;
 }
-.editors-pick .swiper-button-next::after {
+.editors-pick-wrap .swiper-button-next::after {
   color: #b31a1b;
   font-size: 20px;
   font-weight: bold;
 }
-.editors-pick .swiper-button-prev {
+.editors-pick-wrap .swiper-button-prev {
   top: 10px;
   left: calc(100% - 60px);
   width: 20px;
 }
-.editors-pick .swiper-button-prev::after {
+.editors-pick-wrap .swiper-button-prev::after {
   color: #b31a1b;
   font-size: 20px;
   font-weight: bold;
@@ -356,6 +371,20 @@ hr {
 
 .main-contents-home {
   padding: 30px 0;
+}
+@media (min-width: 992px) {
+  .main-contents-home .content-wrapper {
+    display: flex;
+  }
+  .main-contents-home .content-wrapper .left-content {
+    width: calc(100% - 305px);
+    padding-right: 16px;
+    margin-right: 16px;
+    border-right: 1px solid #f1f1f1;
+  }
+  .main-contents-home .content-wrapper .sidebar {
+    width: 305px;
+  }
 }
 
 /*=== layout css start === */

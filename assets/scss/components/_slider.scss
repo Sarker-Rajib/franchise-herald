@@ -1,4 +1,16 @@
-.editors-pick {
+.editors-pick-wrap {
+    @media(min-width:992px) {
+        width: 600px;
+    }
+
+    @media(min-width:1200px) {
+        width: 780px;
+    }
+
+    @media(min-width:1400px) {
+        width: 950px;
+    }
+
     .swiper-button-next {
         top: 10px;
         right: 0;
